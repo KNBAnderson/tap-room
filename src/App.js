@@ -8,12 +8,16 @@ import SplashPage from './SplashPage';
 import KegListPage from './KegListPage';
 import KegDetailPage from './KegDetailPage';
 import AdminKegListPage from './AdminKegListPage';
+import Keg from './Keg';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <SplashPage/>
+      <Keg 
+      name = "blah"
+      description = "blah blah"
+      type = "type thing"/>
       {/* <Switch>
         <Route exact path='/' component={SplashPage} />
         <Route path='/admin' component={AdminKegListPage} />
