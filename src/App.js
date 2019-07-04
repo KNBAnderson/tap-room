@@ -8,7 +8,7 @@ import SplashPage from './SplashPage';
 import KegListPage from './KegListPage';
 import KegDetailPage from './KegDetailPage';
 import AdminKegListPage from './AdminKegListPage';
-
+import AboutPage from './AboutPage';
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       {/* <KegListPage/> */}
       <Switch>
         <Route exact path='/' component={SplashPage} />
+        <Route path='/about' component={AboutPage} />
         {/* <Route path='/admin' component={AdminKegListPage} /> */}
         <Route path='/kegs' component={KegListPage} />
         {/* <Route path='/keg/this' component={KegDetailPage} /> */}
