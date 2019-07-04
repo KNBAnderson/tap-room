@@ -13,6 +13,7 @@ function Nav() {
              #nav{
                 display: flex;
                 background-color: lightgrey;
+                height: 50px;
             }
             h1{
                 margin: 0px;

@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
+      <SplashPage/>
       {/* <Switch>
         <Route exact path='/' component={SplashPage} />
         <Route path='/admin' component={AdminKegListPage} />
