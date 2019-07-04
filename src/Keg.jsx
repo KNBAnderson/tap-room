@@ -14,23 +14,24 @@ import beer from './assests/beer.jpg';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 300,
-    margin: 8
+    maxWidth: 350,
+    margin: 8,
+    fontFamily: 'Raleway', 
   },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
-  },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
+  // expand: {
+  //   transform: 'rotate(0deg)',
+  //   marginLeft: 'auto',
+  //   transition: theme.transitions.create('transform', {
+  //     duration: theme.transitions.duration.shortest,
+  //   }),
+  // },
+  // expandOpen: {
+  //   transform: 'rotate(180deg)',
+  // },
   
 }));
 
@@ -38,9 +39,9 @@ export default function Keg(props) {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
-  function handleExpandClick() {
-    setExpanded(!expanded);
-  }
+  // function handleExpandClick() {
+  //   setExpanded(!expanded);
+  // }
 
   return (
     <Card className={classes.card}>
@@ -56,15 +57,16 @@ export default function Keg(props) {
       <CardMedia
         className={classes.media}
         image={beer}
-        title="beer"
+        title={`A picture of ${props.type}`}
       />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
           {props.description}
         </Typography>
+        <Typography paragraph className="bottom">${props.price}</Typography>
       </CardContent>
-      <CardActions disableSpacing>
-        {/* <IconButton
+      {/* <CardActions disableSpacing>
+        <IconButton
           className={clsx(classes.expand, {
             [classes.expandOpen]: expanded,
           })}
@@ -73,14 +75,14 @@ export default function Keg(props) {
           aria-label="Show more"
         >
           <ExpandMoreIcon />
-        </IconButton> */}
-      </CardActions>
+        </IconButton>
+      </CardActions> 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>{props.description}</Typography>
-          <Typography paragraph>${props.price}</Typography>
+          
         </CardContent>
-      </Collapse>
+      </Collapse>*/}
     </Card>
     );
 }

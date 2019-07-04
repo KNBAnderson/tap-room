@@ -7,7 +7,6 @@ function Nav() {
         <div id='nav'>
             {<Link to ="/" className="link"><h2 className="logo">Bad Martha</h2></Link> }
             {<Link to ="/about" className="link"><h4>About Us</h4></Link> }
-            {<Link to ="/location" className="link"><h4>Locations</h4></Link> }
             {<Link to ="/kegs" className="link"><h4>Our Beers</h4></Link> }
             <style jsx>{`
              #nav{

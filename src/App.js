@@ -9,6 +9,7 @@ import KegListPage from './KegListPage';
 import KegDetailPage from './KegDetailPage';
 import AdminKegListPage from './AdminKegListPage';
 import AboutPage from './AboutPage';
+import AddKeg from './AddKeg';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' component={AboutPage} />
         {/* <Route path='/admin' component={AdminKegListPage} /> */}
         <Route path='/kegs' component={KegListPage} />
+        <Route path='/add' component={AddKeg} />
         {/* <Route path='/keg/this' component={KegDetailPage} /> */}
       </Switch>
       <AdminLink/> 

@@ -6,7 +6,6 @@ function KegList () {
     return(
         <div id="keg-list">
             <h1>Our beers</h1>
-            <hr/>
             <div id="kegs-container">
             {beersInfo.map((beer, index) =>
                 <Keg className='keg'
@@ -30,6 +29,7 @@ function KegList () {
                 .keg{
                     margin: 80px;
                 }
+
             `}</style>
         </div>
     );
