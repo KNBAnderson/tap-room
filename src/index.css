@@ -5,6 +5,7 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
 }
 
 code {
@@ -14,7 +15,7 @@ code {
 
 button {
   padding: 12px;
-  background-color: #ffffff80;
+  background-color: #5f60b488;
   border: none;
   border-radius: 6%;
 }
@@ -28,5 +29,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 input, textarea{
+  width: 200px;
+}
+
+hr {
   width: 200px;
 }
