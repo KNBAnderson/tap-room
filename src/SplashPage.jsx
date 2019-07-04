@@ -1,5 +1,4 @@
 import React from 'react';
-import SplashBanner from './SplashBanner';
 import Background from './assests/SplashBackground.jpg';
 
 function SplashPage() {
