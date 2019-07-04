@@ -18,8 +18,8 @@ function App() {
         <Route path='/admin' component={AdminKegListPage} />
         <Route path='/kegs' component={KegListPage} />
         <Route path='/keg/this' component={KegDetailPage} />
-      </Switch>
-      <AdminLink/> */}
+      </Switch> */}
+      <AdminLink/> 
     </div>
   );
 }
