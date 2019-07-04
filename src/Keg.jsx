@@ -9,12 +9,13 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import beer from './assests/beer.jpg';
 /*import {ExpandMoreIcon, MoreVertIcon, IconButton } from 'material-ui/icons';*/
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345,
+    maxWidth: 300,
+    margin: 8
   },
   media: {
     height: 0,
@@ -30,9 +31,7 @@ const useStyles = makeStyles(theme => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
-  avatar: {
-    backgroundColor: red[500],
-  },
+  
 }));
 
 export default function Keg(props) {
@@ -52,11 +51,11 @@ export default function Keg(props) {
         //   </IconButton>
         // }
         title= {props.name}
-        subheader={props.type}
+        subheader= {`${props.type} | ${props.ABV}% ABV`}
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={beer}
         title="beer"
       />
       <CardContent>
@@ -79,7 +78,7 @@ export default function Keg(props) {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>{props.description}</Typography>
-          
+          <Typography paragraph>${props.price}</Typography>
         </CardContent>
       </Collapse>
     </Card>

@@ -7,16 +7,30 @@ function KegList () {
         <div id="keg-list">
             <h1>Our beers</h1>
             <hr/>
+            <div id="kegs-container">
             {beersInfo.map((beer, index) =>
-                <Keg 
+                <Keg className='keg'
                 name = {beer.name}
                 type = {beer.type}
                 description = {beer.description}
                 ABV = {beer.ABV}
                 price = {beer.price}
                 volume = {beer.volume}
+                key= {index}
                 />    
             )}
+            </div>
+            <style jsx>{`
+                #kegs-container{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+                .keg{
+                    margin: 80px;
+                }
+            `}</style>
         </div>
     );
 }
