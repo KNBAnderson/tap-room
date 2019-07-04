@@ -10,12 +10,13 @@ import KegDetailPage from './KegDetailPage';
 import AdminKegListPage from './AdminKegListPage';
 import AboutPage from './AboutPage';
 import AddKeg from './AddKeg';
+import AdminKeg from './AdminKeg';
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      {/* <KegListPage/> */}
+      <AdminKeg/>
       <Switch>
         <Route exact path='/' component={SplashPage} />
         <Route path='/about' component={AboutPage} />
