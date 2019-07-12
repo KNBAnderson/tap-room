@@ -3,6 +3,7 @@ import Keg from './Keg';
 import PropTypes from 'prop-types';
 
 function KegList (props) {
+    console.log(props);
     return(
         <div id="keg-list">
             <h1>Our beers</h1>
@@ -16,7 +17,7 @@ function KegList (props) {
                 price = {beer.price}
                 volume = {beer.volume}
                 key= {index}
-                isAdminActive = {props.isAdminActive}
+                isAdminActive={props.isAdminActive}
                 />    
             )}
             </div>
@@ -37,8 +38,9 @@ function KegList (props) {
 }
 
 KegList.propTypes = {
-    onAddingNewkeg: PropTypes.func,
-    isAdminActive: PropTypes.bool
+    onAddingNewKeg: PropTypes.func,
+    isAdminActive: PropTypes.bool,
+    masterKegList: PropTypes.array
 }
 
 export default KegList;

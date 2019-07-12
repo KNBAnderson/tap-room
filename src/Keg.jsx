@@ -6,6 +6,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import beer from './assests/beer.jpg';
+import PropTypes from 'prop-types';
+import AdminKeg from './AdminKeg';
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -38,7 +40,9 @@ function Keg(props) {
         <Typography variant="body2" color="textSecondary" component="p">
           {props.description}
         </Typography>
-        <Typography paragraph className="bottom">${props.price}</Typography>
+        <Typography paragraph className="bottom">${props.price}
+          {props.isAdminActive ? <AdminKeg/>: <h3>False working</h3>}
+        </Typography>
       </CardContent>
     </Card>
     );

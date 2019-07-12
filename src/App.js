@@ -30,6 +30,7 @@ class App extends React.Component {
   handleChangingAdminView = () => {
     let newAdminActive = !this.state.isAdminActive;
     this.setState({isAdminActive: newAdminActive})
+    console.log('admin click')  
   }
 
   handleAddingNewKeg = (newKeg) => {
@@ -45,13 +46,13 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Over21Control} />
           <Route path='/about' component={AboutPage} />
-          <Route path='/admin' render={() =><AdminControl onChangingAdminView={this.handleChangingAdminView}/>} />
-          <Route path='/kegs' render={() =><KegListPage masterKegList={this.masterKegList} isAdminActive={this.isAdminActive}/>}/>
+          <Route path='/admin' render={() =><AdminControl/>} />
+          <Route path='/kegs' render={() =><KegListPage masterKegList={this.state.masterKegList} isAdminActive={this.state.isAdminActive} />}/>
           <Route path='/newkeg' render={() =><AddKeg onAddingNewKeg={this.handleAddingNewKeg}/>} />
           {/* <Route path='/keg' render={() =><KegDetailPage onSelectingKeg={this.handleSelectingKeg}/>} /> */}
           <Route component={Error404} />
         </Switch>
-        <AdminLink/> 
+        <AdminLink onChangingAdminView={this.handleChangingAdminView}/> 
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function AdminLink() {
+
+function AdminLink(props) {
     const footerStyles = {
         position: 'fixed',
         bottom: '0',
@@ -9,9 +11,13 @@ function AdminLink() {
     }
     return (
         <footer className="footer" style={footerStyles}>
-            <h6>Admin</h6>
+            <h6 onClick={props.onChangingAdminView}>Admin</h6>
         </footer>
     )
+}
+
+AdminLink.propTypes = {
+    onChangingAdminView: PropTypes.func
 }
 
 export default AdminLink
