@@ -1,24 +1,33 @@
 import React from 'react';
+import SplashPage from './SplashPage';
 
 class Over21Control extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      isOver21: false
     };
   }
 
-  handleClick(){
-    console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
+  handleClick = () => {
+    this.setState({isover21 : true})
   }
 
   render(){
-    return (
-      <div>
+    let currentlVisible = null;
+    if (this.state.isOver21) {
+      currentlVisible = <SplashPage />
+    } else {
+      currentlVisible = <div id="over21Question">
         <p>Are you over 21?</p>
         <strong onClick={this.handleClick}>Yes</strong><br/>
         <strong>No (lol just click yes)</strong>
+      </div>
+    }
+    return (
+      <div>
+        {currentlVisible}
       </div>
     );
   }
