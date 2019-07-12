@@ -50,7 +50,14 @@ function Keg(props) {
 }
 
 Keg.propTypes = {
-  isAdminActive: PropTypes.bool
+  isAdminActive: PropTypes.bool,
+  name: PropTypes.string,
+  type: PropTypes.string,
+  description: PropTypes.string,
+  ABV: PropTypes.string,
+  price: PropTypes.string,
+  volume: PropTypes.string,
+  key: PropTypes.string
 }
 
 export default Keg;

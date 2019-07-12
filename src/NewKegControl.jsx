@@ -1,11 +1,18 @@
-import React from 'react';
+// import React from 'react';
+// import PropTypes from "prop-types";
 
-class NewKegControl extends React.Component {
-    render() {
-        return (
+// class NewKegControl extends React.Component {
+//     render() {
 
-        )
-    }
-}
+//         if (this.state.form)
+//         return (
 
-export default NewKegControl;
+//         )
+//     }
+// }
+
+// NewKegControl.propTypes = {
+//     onNewKegCreation: PropTypes.func
+//   };
+
+// export default NewKegControl;
