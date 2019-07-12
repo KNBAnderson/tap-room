@@ -11,7 +11,6 @@ class Over21Control extends React.Component {
   }
 
   handleClick = () => {
-    console.log("click");
     this.setState({isOver21 : true})
   }
 
