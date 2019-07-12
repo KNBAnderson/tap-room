@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 
 function AddKeg(props){
@@ -11,13 +10,12 @@ function AddKeg(props){
 
   function handleNewKegFormSubmission(e) {
     e.preventDefault();
-    console.log(_name.value);
     props.onAddingNewKeg({name: _name.value, type: _type.value, ABV: _ABV.value, price: _price.value, description: _description.value})
-    _name = '';
-    _type = '';
-    _ABV = '';
-    _price = '';
-    _description = '';
+    _name.value = '';
+    _type.value = '';
+    _ABV.value = '';
+    _price.value = '';
+    _description.value = '';
   }
 
   return (
@@ -28,32 +26,37 @@ function AddKeg(props){
           type='text'
           id='name'
           placeholder='Beer name'
+          required
           ref={(input) => {_name = input;}}/><br/><br/>
           
         <input
           type='text'
           id='type'
           placeholder='Beer type'
+          required
           ref={(input) => {_type = input;}}/><br/><br/>
           
         <input
           type='number'
           id='ABV'
           placeholder='ABV'
+          required
           ref={(input) => {_ABV = input;}}/><br/><br/>
           
         <input
           type='number'
           id='price'
           placeholder='Beer price'
+          required
           ref={(input) => {_price = input;}}/><br/><br/>
           
         <textarea
           id='description'
           placeholder='Beer description.'
+          required
           ref={(textarea) => {_description = textarea;}}/><br/><br/>
           
-        <Link to="/kegs"><button type='submit'>Add new beer</button></Link>
+        <button type='submit'>Add new beer</button>
       </form>
     </div>
   );

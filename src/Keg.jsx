@@ -11,7 +11,7 @@ import AdminKeg from './AdminKeg';
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 350,
+    width: 350,
     margin: 8,
     fontFamily: 'Raleway', 
   },
