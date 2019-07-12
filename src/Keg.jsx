@@ -40,8 +40,9 @@ function Keg(props) {
         <Typography variant="body2" color="textSecondary" component="p">
           {props.description}
         </Typography>
-        <Typography paragraph className="bottom">${props.price}
-          {props.isAdminActive ? <AdminKeg/>: <h3>False working</h3>}
+        <Typography paragraph className="bottom">
+          <br/>
+          {props.isAdminActive ? <AdminKeg/>: <div>${props.price}</div>}
         </Typography>
       </CardContent>
     </Card>

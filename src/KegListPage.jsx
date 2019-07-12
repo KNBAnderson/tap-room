@@ -1,12 +1,15 @@
 import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+
 
 function KegList (props) {
-    console.log(props);
     return(
         <div id="keg-list">
             <h1>Our beers</h1>
+            {props.isAdminActive ? <Link to="/newkeg"><button>Add a new keg to the list</button></Link>: <br/>}
+            
             <div id="kegs-container">
             {props.masterKegList.map((beer, index) =>
                 <Keg className='keg'
