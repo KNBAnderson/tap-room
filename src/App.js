@@ -9,13 +9,15 @@ import AboutPage from './AboutPage';
 import AddKeg from './AddKeg';
 import Error404 from './Error404';
 import Over21Control from './Over21Control';
+import {beersInfo} from './beers-data';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isAdminActive: false,
-      currentKeg: null
+      currentKeg: null,
+      masterKegList: beersInfo
     }
   }
 
@@ -30,6 +32,12 @@ class App extends React.Component {
     this.setState({isAdminActive: newAdminActive})
   }
 
+  handleAddingNewKeg = (newKeg) => {
+    let newMasterBeerList = this.state.masterKegList.slice();
+    newMasterBeerList.push(newKeg);
+    this.setState({masterKegList: newMasterBeerList})
+  }
+
   render() {
     return (
       <div className="App">
@@ -38,8 +46,8 @@ class App extends React.Component {
           <Route exact path='/' component={Over21Control} />
           <Route path='/about' component={AboutPage} />
           <Route path='/admin' render={() =><AdminControl onChangingAdminView={this.handleChangingAdminView}/>} />
-          <Route path='/kegs' render={() =><KegListPage isAdminActive={this.isAdminActive}/>}/>
-          <Route path='/add' component={AddKeg} />
+          <Route path='/kegs' render={() =><KegListPage masterKegList={this.masterKegList} isAdminActive={this.isAdminActive}/>}/>
+          <Route path='/newkeg' render={() =><AddKeg onAddingNewKeg={this.handleAddingNewKeg}/>} />
           {/* <Route path='/keg' render={() =><KegDetailPage onSelectingKeg={this.handleSelectingKeg}/>} /> */}
           <Route component={Error404} />
         </Switch>

@@ -1,13 +1,13 @@
 import React from 'react';
 import Keg from './Keg';
-import {beersInfo} from './beers-data';
+import PropTypes from 'prop-types';
 
-function KegList () {
+function KegList (props) {
     return(
         <div id="keg-list">
             <h1>Our beers</h1>
             <div id="kegs-container">
-            {beersInfo.map((beer, index) =>
+            {props.masterKegList.map((beer, index) =>
                 <Keg className='keg'
                 name = {beer.name}
                 type = {beer.type}
@@ -16,6 +16,7 @@ function KegList () {
                 price = {beer.price}
                 volume = {beer.volume}
                 key= {index}
+                isAdminActive = {props.isAdminActive}
                 />    
             )}
             </div>
@@ -33,6 +34,11 @@ function KegList () {
             `}</style>
         </div>
     );
+}
+
+KegList.propTypes = {
+    onAddingNewkeg: PropTypes.func,
+    isAdminActive: PropTypes.bool
 }
 
 export default KegList;
