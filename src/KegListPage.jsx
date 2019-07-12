@@ -19,7 +19,7 @@ function KegList (props) {
                 ABV = {beer.ABV}
                 price = {beer.price}
                 volume = {beer.volume}
-                key= {index}
+                key= {beer.id}
                 isAdminActive={props.isAdminActive}
                 />    
             )}

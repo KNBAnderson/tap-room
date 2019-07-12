@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { v4 } from 'uuid';
 
 function AddKeg(props){
   let _name = null;
@@ -10,7 +10,7 @@ function AddKeg(props){
 
   function handleNewKegFormSubmission(e) {
     e.preventDefault();
-    props.onAddingNewKeg({name: _name.value, type: _type.value, ABV: _ABV.value, price: _price.value, description: _description.value})
+    props.onAddingNewKeg({name: _name.value, type: _type.value, ABV: _ABV.value, price: _price.value, description: _description.value, id: v4()})
     _name.value = '';
     _type.value = '';
     _ABV.value = '';
