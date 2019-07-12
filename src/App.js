@@ -4,7 +4,6 @@ import { Switch, Route } from 'react-router-dom';
 import Nav from './Nav'
 import AdminLink from './AdminLink'
 import KegListPage from './KegListPage';
-import AdminControl from './AdminControl';
 import AboutPage from './AboutPage';
 import AddKeg from './AddKeg';
 import Error404 from './Error404';
@@ -46,7 +45,6 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={Over21Control} />
           <Route path='/about' component={AboutPage} />
-          <Route path='/admin' render={() =><AdminControl/>} />
           <Route path='/kegs' render={() =><KegListPage masterKegList={this.state.masterKegList} isAdminActive={this.state.isAdminActive} />}/>
           <Route path='/newkeg' render={() =><AddKeg onAddingNewKeg={this.handleAddingNewKeg}/>} />
           {/* <Route path='/keg' render={() =><KegDetailPage onSelectingKeg={this.handleSelectingKeg}/>} /> */}

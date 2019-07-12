@@ -56,7 +56,7 @@ Keg.propTypes = {
   description: PropTypes.string,
   ABV: PropTypes.string,
   price: PropTypes.string,
-  volume: PropTypes.string,
+  volume: PropTypes.number,
   key: PropTypes.string
 }
 
