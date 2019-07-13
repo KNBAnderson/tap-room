@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "“http://KNBAnderson.github.io/tap-room/static/css/main.863e0bd5.chunk.css",
+    "main.js": "“http://KNBAnderson.github.io/tap-room/static/js/main.67f28e5e.chunk.js",
+    "main.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/main.67f28e5e.chunk.js.map",
+    "runtime~main.js": "“http://KNBAnderson.github.io/tap-room/static/js/runtime~main.2d41315b.js",
+    "runtime~main.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/runtime~main.2d41315b.js.map",
+    "static/js/2.9a3f4877.chunk.js": "“http://KNBAnderson.github.io/tap-room/static/js/2.9a3f4877.chunk.js",
+    "static/js/2.9a3f4877.chunk.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/2.9a3f4877.chunk.js.map",
+    "index.html": "“http://KNBAnderson.github.io/tap-room/index.html",
+    "precache-manifest.c74da56bb030e790ee159c370c9871bb.js": "“http://KNBAnderson.github.io/tap-room/precache-manifest.c74da56bb030e790ee159c370c9871bb.js",
+    "service-worker.js": "“http://KNBAnderson.github.io/tap-room/service-worker.js",
+    "static/css/main.863e0bd5.chunk.css.map": "“http://KNBAnderson.github.io/tap-room/static/css/main.863e0bd5.chunk.css.map",
+    "static/media/AboutBackground.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/AboutBackground.24cd138a.jpg",
+    "static/media/SplashBackground.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/SplashBackground.0c04ec4b.jpg",
+    "static/media/beer.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/beer.faa16c38.jpg"
+  }
+}
