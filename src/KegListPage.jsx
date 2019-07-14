@@ -2,6 +2,7 @@ import React from 'react';
 import Keg from './Keg';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { v4 } from 'uuid';
 
 
 function KegList (props) {
@@ -12,6 +13,7 @@ function KegList (props) {
             
             <div id="kegs-container">
             {props.masterKegList.map((beer, index) =>
+                <div key={v4()}>
                 <Keg className='keg'
                 name = {beer.name}
                 type = {beer.type}
@@ -19,9 +21,9 @@ function KegList (props) {
                 ABV = {beer.ABV}
                 price = {beer.price}
                 volume = {beer.volume}
-                key= {beer.id}
                 isAdminActive={props.isAdminActive}
                 />    
+                </div>
             )}
             </div>
             <style jsx>{`

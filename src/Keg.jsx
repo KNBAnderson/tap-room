@@ -26,7 +26,7 @@ function Keg(props) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.card} id={props.id}>
       <CardHeader
         title= {props.name}
         subheader= {`${props.type} | ${props.ABV}% ABV`}
@@ -54,10 +54,10 @@ Keg.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
   description: PropTypes.string,
-  ABV: PropTypes.string,
-  price: PropTypes.string,
+  ABV: PropTypes.number,
+  price: PropTypes.number,
   volume: PropTypes.number,
-  key: PropTypes.string
+  id: PropTypes.string
 }
 
 export default Keg;
