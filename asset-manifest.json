@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "“http://KNBAnderson.github.io/tap-room/static/css/main.863e0bd5.chunk.css",
-    "main.js": "“http://KNBAnderson.github.io/tap-room/static/js/main.aa2ef54d.chunk.js",
-    "main.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/main.aa2ef54d.chunk.js.map",
-    "runtime~main.js": "“http://KNBAnderson.github.io/tap-room/static/js/runtime~main.2d41315b.js",
-    "runtime~main.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/runtime~main.2d41315b.js.map",
-    "static/js/2.cc49f3a4.chunk.js": "“http://KNBAnderson.github.io/tap-room/static/js/2.cc49f3a4.chunk.js",
-    "static/js/2.cc49f3a4.chunk.js.map": "“http://KNBAnderson.github.io/tap-room/static/js/2.cc49f3a4.chunk.js.map",
-    "index.html": "“http://KNBAnderson.github.io/tap-room/index.html",
-    "precache-manifest.9b545729c6f92a0a4453ebd0384be6d5.js": "“http://KNBAnderson.github.io/tap-room/precache-manifest.9b545729c6f92a0a4453ebd0384be6d5.js",
-    "service-worker.js": "“http://KNBAnderson.github.io/tap-room/service-worker.js",
-    "static/css/main.863e0bd5.chunk.css.map": "“http://KNBAnderson.github.io/tap-room/static/css/main.863e0bd5.chunk.css.map",
-    "static/media/AboutBackground.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/AboutBackground.24cd138a.jpg",
-    "static/media/SplashBackground.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/SplashBackground.0c04ec4b.jpg",
-    "static/media/beer.jpg": "“http://KNBAnderson.github.io/tap-room/static/media/beer.faa16c38.jpg"
+    "main.css": "/tap-room/static/css/main.863e0bd5.chunk.css",
+    "main.js": "/tap-room/static/js/main.aa2ef54d.chunk.js",
+    "main.js.map": "/tap-room/static/js/main.aa2ef54d.chunk.js.map",
+    "runtime~main.js": "/tap-room/static/js/runtime~main.7960e82e.js",
+    "runtime~main.js.map": "/tap-room/static/js/runtime~main.7960e82e.js.map",
+    "static/js/2.cc49f3a4.chunk.js": "/tap-room/static/js/2.cc49f3a4.chunk.js",
+    "static/js/2.cc49f3a4.chunk.js.map": "/tap-room/static/js/2.cc49f3a4.chunk.js.map",
+    "index.html": "/tap-room/index.html",
+    "precache-manifest.6575145d6bf6a61ba3d61f12f90bea3a.js": "/tap-room/precache-manifest.6575145d6bf6a61ba3d61f12f90bea3a.js",
+    "service-worker.js": "/tap-room/service-worker.js",
+    "static/css/main.863e0bd5.chunk.css.map": "/tap-room/static/css/main.863e0bd5.chunk.css.map",
+    "static/media/AboutBackground.jpg": "/tap-room/static/media/AboutBackground.24cd138a.jpg",
+    "static/media/SplashBackground.jpg": "/tap-room/static/media/SplashBackground.0c04ec4b.jpg",
+    "static/media/beer.jpg": "/tap-room/static/media/beer.faa16c38.jpg"
   }
 }
