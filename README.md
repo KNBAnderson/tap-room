@@ -4,7 +4,9 @@
 
 ## Description
 _View the deployed version here https://knbanderson.github.io/tap-room/_
+
 _A brewery webpage using React._
+
 _This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)._
 
 ## Setup/Installation Requirements
